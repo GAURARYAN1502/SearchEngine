@@ -1,0 +1,115 @@
+/* Add a background image to the body */
+body {
+  background-color: #42f4d0;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Create a container for the search engine */
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 10px;
+  background-color: rgb(52 187 198 / 90%); /* Slight transparency for a softer look */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the header */
+header {
+  background-color: #f2f2f2;
+  padding:10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #4285F4; /* Google blue */
+}
+
+/* Add colorful gradient to the heading */
+header h1::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background: linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #34A853); /* Google colors */
+}
+
+/* Style the search section */
+.search-section {
+  padding: 15px;
+}
+
+.gcse-search {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gcse-search:focus {
+  border-color: #4285F4; /* Google blue */
+  box-shadow: 0 0 10px rgba(66, 133, 244, 0.3);
+}
+
+/* Style the results section */
+.results-section {
+  padding: 20px;
+}
+
+#results-container {
+  padding: 1px;
+}
+
+/* Style for search results */
+.result {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.result h3 {
+  margin: 0;
+  color: #4285F4; /* Google blue */
+}
+
+.result p {
+  color: #555;
+}
+
+/* Make the search engine mobile-friendly */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .gcse-search {
+    font-size: 16px;
+  }
+  #results-container {
+    padding: 5px;
+  }
+}
+
+/* Add some Google-like styles */
+.gcse-search::-webkit-input-placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+.gcse-search::-moz-placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+.gcse-search:-ms-input-placeholder {
+  font-style: italic;
+  color: #999;
+}
